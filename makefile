@@ -5,8 +5,8 @@ TARGET = myprogram
 
 all: $(TARGET)
 
-$(TARGET): main.c
-	$(CC) $(CFLAGS) -o $(TARGET) main.c
+$(TARGET): hello.c program.c
+	$(CC) $(CFLAGS) -o $(TARGET) hello.c program.c
 
 clean:
 	rm -f $(TARGET)
